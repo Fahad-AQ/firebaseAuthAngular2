@@ -1,0 +1,20 @@
+<div [hidden]="loadingCondition" class="Loading-MarginDiv" >
+   <div class="Loading-Div"><h1>Please Wait While Loading</h1>
+<p class="loader"></p>
+   </div>
+</div>
+<div [hidden]="!loadingCondition">
+    <div class="container">    
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info" >
+                    <div class="panel-heading">
+                        <div class="panel-title"><h1>{{title}}</h1></div>
+                    </div>
+            </div>
+        </div>
+</div>       
+<router-outlet></router-outlet>
+</div>
+
+
+
